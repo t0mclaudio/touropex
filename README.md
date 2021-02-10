@@ -1,2 +1,2 @@
-# touropex
-A tour operator's ${whatever} app
+# A Tour operator's ${TBD} app
+A tour operator's ${TBD} app
