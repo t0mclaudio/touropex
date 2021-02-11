@@ -33,7 +33,8 @@
     },
     "slug": {
       "type": "string",
-      "private": true
+      "private": true,
+      "unique": true
     }
   }
 }
