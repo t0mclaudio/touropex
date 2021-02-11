@@ -35,6 +35,15 @@
       "type": "string",
       "private": true,
       "unique": true
+    },
+    "pricelist": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
