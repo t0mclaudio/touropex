@@ -30,7 +30,8 @@
       "type": "integer"
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "private": true
     }
   }
 }

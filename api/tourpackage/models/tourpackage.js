@@ -5,4 +5,14 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+  /**
+   * Triggered before user creation.
+   */
+  lifecycles: {
+    async beforeCreate(data) {
+      const { name } = data;
+      data.slug = name.toLowerCase().replace(/ /g, '-');
+    },
+  },  
+};
