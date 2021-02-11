@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tourpackages",
+  "info": {
+    "name": "tourpackage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

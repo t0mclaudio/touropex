@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tourpackages",
+      "handler": "tourpackage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tourpackages/count",
+      "handler": "tourpackage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tourpackages/:id",
+      "handler": "tourpackage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tourpackages",
+      "handler": "tourpackage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tourpackages/:id",
+      "handler": "tourpackage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tourpackages/:id",
+      "handler": "tourpackage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
