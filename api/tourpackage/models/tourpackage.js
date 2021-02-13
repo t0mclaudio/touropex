@@ -12,7 +12,11 @@ module.exports = {
   lifecycles: {
     async beforeCreate(data) {
       const { name } = data;
-      data.slug = name.toLowerCase().replace(/ /g, '-');
+      data.slug = createSlug(name);
     },
   },  
 };
+
+function createSlug(str) {
+  return str.toLowerCase().replace(/ /g, '-');
+}
