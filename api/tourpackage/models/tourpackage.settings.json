@@ -11,30 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "code": {
-      "type": "string",
-      "unique": true,
-      "required": true
-    },
     "name": {
       "type": "string",
       "required": true,
-      "unique": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
-    "info": {
-      "type": "richtext"
-    },
-    "duration": {
-      "type": "integer"
-    },
-    "slug": {
-      "type": "string",
-      "private": true,
-      "unique": true
+      "unique": false
     },
     "pricelist": {
       "model": "file",
